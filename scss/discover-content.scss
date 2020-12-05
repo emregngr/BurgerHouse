@@ -1,0 +1,220 @@
+.discover-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  padding: 20px 20px;
+}
+
+.discover-content__wrapper {
+  color: #3d2514;
+  box-shadow: 10px 15px 43px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 50px;
+}
+
+.discover-content__rectangle {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 800px;
+}
+
+.discover-content__rectangle__container {
+	display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+  
+.discover-content__rectangle__box {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  padding: 10px;
+}
+
+.discover-content__rectangle__box__top {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.discover-content__rectangle__box__title {
+	font-family: "bebas-neue-bold";
+  font-size: 29px;
+  color: #3d3d3d;
+  letter-spacing: 2px;
+}
+
+.discover-content__rectangle__box__subtitle {
+	display: block;
+	font-family: "alfaslabone-regular";
+  font-size: 42px;
+}
+
+.discover-content__rectangle__box__text {
+	font-family: "montserrat-regular";
+	font-size: 21px;
+	line-height: 30px;
+  margin-top: 40px;
+}
+
+.discover-content__rectangle__box__bottom {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+
+  & > li > button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background-color: #dcdcdc;
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
+    color: #dcdcdc;
+  }
+  
+  & > li > button:hover{
+    background-color: #ffc045;
+    color: #ffc045;
+  }
+
+  & > .slick-active > button{
+    background-color: #ffc045;
+    color: #ffc045;
+  }
+}
+
+.discover-content__rectangle__image {
+  width: calc(100% - 10px);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-self: center;
+}
+  
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+	.discover-content__rectangle__box__title {
+		font-size: 40px;
+	}
+	
+	.discover-content__rectangle__box__subtitle {
+		font-size: 50px;
+	}
+	
+	.discover-content__rectangle__box__text {
+		font-size: 25px;
+		line-height: 35px;
+	}
+
+	.discover-content__rectangle__image {
+		width: calc(100% - 20px);
+		height: 100%;
+  }
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+	.container{
+		padding: 0 15px;
+	}
+
+	.discover-content__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 125px;
+	}
+	
+	.discover-content__rectangle {
+    width: 970px;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	}
+	
+	.discover-content__rectangle__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 910px;
+    height: 400px;
+  }
+    
+  .discover-content__rectangle__box {
+    justify-content: space-between;
+    width: calc(45% - 20px);
+    height: calc(100% - 60px);
+  }
+  
+  .discover-content__rectangle__box__top {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+	}
+	
+	.discover-content__rectangle__box__title {
+		font-size: 25px;
+	}
+	
+	.discover-content__rectangle__box__subtitle {
+		font-size: 38px;
+	}
+	
+	.discover-content__rectangle__box__text {
+		font-size: 14px;
+		line-height: 25px;
+	}
+
+  .discover-content__rectangle__box__bottom {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0 0 40px;
+}
+  
+  .discover-content__rectangle__image {
+    width: calc(55% - 20px);
+		height: 100%;
+    align-self: none;
+    background-position: right;
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1460px) {
+
+	.discover-content__rectangle {
+    width: 1300px;
+    height: 500px;
+	}
+	
+	.discover-content__rectangle__container {
+    width: 1240px;
+    height: 440px;
+  }
+	.discover-content__rectangle__box__title {
+		font-size: 29px;
+	}
+	
+	.discover-content__rectangle__box__subtitle {
+		font-size: 42px;
+	}
+	
+	.discover-content__rectangle__box__text {
+		font-size: 20px;
+		line-height: 30px;
+  }
+  
+}

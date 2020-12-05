@@ -1,0 +1,114 @@
+.highlight-menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.highlight-menu__wrapper {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px 10px;
+}
+
+.highlight-menu__section {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	height: 250px;
+	margin-bottom: 20px;
+}
+
+.highlight-menu__section:last-child {
+	margin-bottom: 0;
+}
+
+.highlight-menu__box {
+	height: 100%;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.highlight-menu__half-box {
+	height: calc(50% - 7.5px);
+	border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.highlight-menu__title {
+	font-family: "bebas-neue-bold";
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    color: #ffffff;
+}
+
+.highlight-menu__title--big-font {
+	display: block;
+    font-size: 28px;
+}
+
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+	.highlight-menu__wrapper {
+    padding: 50px 30px;
+	}
+
+	.highlight-menu__section {
+		height: 450px;
+		margin-bottom: 40px;
+	}
+
+	.highlight-menu__title {
+		font-size: 60px;
+		left: 20px;
+	}
+	
+	.highlight-menu__title--big-font {
+		font-size: 70px;
+	}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+	.highlight-menu__wrapper {
+		flex-direction: row;
+		height: 570px;
+		padding: 80px 50px;
+	}
+
+	.highlight-menu__section {
+		justify-content: space-between;
+		width: calc(50% - 20px);
+		height: auto;
+		margin-bottom: 0;
+	}
+
+	.highlight-menu__half-box {
+		height: calc(50% - 17.5px);
+	}
+	
+	.highlight-menu__title {
+		font-size: 25px;
+		left: 20px;
+		top: 20px;
+	}
+	
+	.highlight-menu__title--big-font {
+		font-size: 40px;
+	}
+	
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1460px) {}

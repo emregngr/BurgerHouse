@@ -1,0 +1,165 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header__wrapper {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo-area {
+  left: 57px;
+  top: 53px;
+  width: 161px;
+}
+
+.header__logo-area img {
+  width: 100%;
+}
+
+.header__mobile-menu-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__menu-area {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__menu__item {
+  color: #3d2514;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 50px;
+  text-decoration: none;
+  font-family: "bebas-neue-bold";
+  letter-spacing: 2.7px;
+  cursor: pointer;
+}
+
+.header__menu__item:first-child {
+  margin-left: 0;
+}
+
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hamburger__bar1, .hamburger__bar2, .hamburger__bar3 {
+  width: 25px;
+  height: 3px;
+  background-color: #3d2514;
+  transition: 0.4s;
+  margin: 3px 0;
+}
+
+.change .hamburger__bar1 {
+  transform: rotate(-45deg) translate(0px, 3px);
+}
+
+.change .hamburger__bar2 {opacity: 0;}
+
+.change .hamburger__bar3 {
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.header__mobile-menu {
+  display: none;
+}
+
+.header__mobile-menu--open {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.header__mobile-menu__item {
+  color: #3d2514;
+  display: flex;
+  justify-content: center;
+  font-family: "bebas-neue-bold";
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.header__contact {
+  text-align: center;
+  padding-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.header__contact__image {
+  margin-right: 10px;
+}
+
+.header__contact__phone {
+  font-size: 16px;
+  font-family: "montserrat-bold";
+  color: #3d2514;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  .header__wrapper {
+    padding-top: 55px;
+  }
+
+  .header__logo-area {
+    width: 263px;
+  }
+
+  .hamburger__bar1, .hamburger__bar2, .hamburger__bar3 {
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+  }
+
+  .change .hamburger__bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .hamburger__bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  .header__mobile-menu__item {
+    font-size: 30px;
+  }
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  .header__mobile-menu-area {
+    display: none;
+  }
+
+  .header__menu-area {
+    display: flex;
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1460px) {}

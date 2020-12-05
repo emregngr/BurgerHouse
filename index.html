@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/bundles/index.css" rel="stylesheet" />
+    <script src="./bundles/bundle.js"></script>
+    <title>Burger House</title>
+  </head>
+
+  <body>
+    <div class="show-screen">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <div class="header__logo-area">
+              <img src="./images/header/logo.png" alt="Logo" />
+            </div>
+            <div class="header__menu-area">
+              <div class="header__contact">
+                <img class="header__contact__image" src="./images/header/motorbike.png" alt="Object" />
+                <span class="header__contact__phone">Express Delivery +1 234 567 890</span>
+              </div>
+              <nav class="header__menu">
+                <a class="header__menu__item" href="#home">HOME</a>
+                <a class="header__menu__item" href="#menu">MENU</a>
+                <a class="header__menu__item" href="#ourstory">OUR STORY</a>
+                <a class="header__menu__item" href="#contactus">CONTACT US</a>
+              </nav>
+            </div>
+            <div class="header__mobile-menu-area">
+              <div class="hamburger" onclick="hamburgerToggle(this)">
+                <div class="hamburger__bar1"></div>
+                <div class="hamburger__bar2"></div>
+                <div class="hamburger__bar3"></div>
+              </div>
+            </div>
+          </div>
+          <nav class="header__mobile-menu">
+            <a class="header__mobile-menu__item" href="#home">HOME</a>
+            <a class="header__mobile-menu__item" href="#menu">MENU</a>
+            <a class="header__mobile-menu__item" href="#ourstory">OUR STORY</a>
+            <a class="header__mobile-menu__item" href="#contactus">CONTACT US</a>
+          </nav>
+        </div>
+      </header>
+
+      <div class="main-content">
+        <div class="container">
+          <div class="main-content__wrapper">
+            <div class="main-content__offer">
+              <div class="main-content__rectangle">
+                <p class="main-content__rectangle__title">IT IS A GOOD TİME FOR THE GREAT TASTE OF BURGERS</p>
+              </div>
+              <p class="main-content__title">BURGER</p>
+              <p class="main-content__subtitle">WEEK</p>
+            </div>
+            <div class="main-content__images">
+              <div class="main-content__price">
+                <div class="main-content__ellipse"></div>
+                <div class="main-content__dashed-ellipse"></div>
+                <p class="main-content__price-title">
+                  <span class="main-content__price-title--big-font">$5<span class="main-content__price-title--small-font">.49</span></span
+                  >O N L Y
+                </p>
+              </div>
+              <img class="main-content__image-left" src="./images/main-content/french-fries.png" alt="French Fries Image" />
+              <img class="main-content__image-center" src="./images/main-content/burger-image.png" alt="Burger Image" />
+              <img class="main-content__image-right" src="./images/main-content/drinks-image.png" alt="Drinks Image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-background">
+      <div class="highlight-menu">
+        <div class="container">
+          <div class="highlight-menu__wrapper">
+            <div class="highlight-menu__section">
+              <div class="highlight-menu__box" style="background-image: url('./images/highlight-menu/popular-burger.png')">
+                <p class="highlight-menu__title">TRY IT TODAY<span class="highlight-menu__title--big-font">MOST POPULAR BURGER</span></p>
+              </div>
+            </div>
+            <div class="highlight-menu__section">
+              <div class="highlight-menu__half-box" style="background-image: url('./images/highlight-menu/taste-burger.png')">
+                <p class="highlight-menu__title">
+                  TRY IT TODAY<span class="highlight-menu__title--big-font"
+                    >MORE FUN<span class="highlight-menu__title--big-font">MORE TASTE</span></span
+                  >
+                </p>
+              </div>
+              <div class="highlight-menu__half-box" style="background-image: url('./images/highlight-menu/fresh-burger.png')">
+                <p class="highlight-menu__title">TRY IT TODAY<span class="highlight-menu__title--big-font">FRESH & CHILI</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="order-menu">
+        <div class="container--large">
+          <div class="order-menu__wrapper">
+            <div class="order-menu__title">
+              <p class="order-menu__title__rectangle">ALWAYS TASTY BURGER</p>
+              <p class="order-menu__title__subtitle">CHOOSE & ENJOY</p>
+              <p class="order-menu__title__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+              </p>
+            </div>
+            <div class="order-menu__section">
+              <div class="order-menu__section__item">
+                <div class="order-menu__section__image" style="background-image: url('./images/order-menu/order-burger.png')"></div>
+                <p class="order-menu__section__title">LOREM IPSUM DOLOR</p>
+                <p class="order-menu__section__text">Lorem ipsum dolor sit amet, consectetur <br />adipiscing elit, sed do</p>
+                <br />
+                <a class="order-menu__section__rectangle" href="#ordernow">ORDER NOW</a>
+              </div>
+              <div class="order-menu__section__item">
+                <div class="order-menu__section__image" style="background-image: url('./images/order-menu/order-burger1.png')"></div>
+                <p class="order-menu__section__title">LOREM IPSUM DOLOR</p>
+                <p class="order-menu__section__text">Lorem ipsum dolor sit amet, consectetur <br />adipiscing elit, sed do</p>
+                <br />
+                <a class="order-menu__section__rectangle" href="#ordernow">ORDER NOW</a>
+              </div>
+              <div class="order-menu__section__item">
+                <div class="order-menu__section__image" style="background-image: url('./images/order-menu/order-burger.png')"></div>
+                <p class="order-menu__section__title">LOREM IPSUM DOLOR</p>
+                <p class="order-menu__section__text">Lorem ipsum dolor sit amet, consectetur <br />adipiscing elit, sed do</p>
+                <br />
+                <a class="order-menu__section__rectangle" href="#ordernow">ORDER NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="discover-content">
+        <div class="container">
+          <div class="discover-content__wrapper">
+            <div class="discover-content__area">
+              <div class="discover-content__rectangle">
+                <div class="discover-content__rectangle__container">
+                  <div class="discover-content__rectangle__box">
+                    <div class="discover-content__rectangle__box__top">
+                      <p class="discover-content__rectangle__box__title">DISCOVER</p>
+                      <span class="discover-content__rectangle__box__subtitle">UPCOMING EVENTS</span>
+                      <p class="discover-content__rectangle__box__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisc- <br />ing elit, sed do eiusmod tempor incididunt ut <br />labore et
+                        dolore magna aliqua. Quis ipsum sus- <br />pendisse ultrices gravida. Risus commodo viverra <br />maecenas accumsan
+                        lacus vel facilisis.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="discover-content__rectangle__image"
+                    style="background-image: url('./images/discover-content/discover-burger.png')"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="discover-content__area">
+              <div class="discover-content__rectangle">
+                <div class="discover-content__rectangle__container">
+                  <div class="discover-content__rectangle__box">
+                    <div class="discover-content__rectangle__box__top">
+                      <p class="discover-content__rectangle__box__title">DISCOVER</p>
+                      <span class="discover-content__rectangle__box__subtitle">UPCOMING EVENTS</span>
+                      <p class="discover-content__rectangle__box__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisc- <br />ing elit, sed do eiusmod tempor incididunt ut <br />labore et
+                        dolore magna aliqua. Quis ipsum sus- <br />pendisse ultrices gravida. Risus commodo viverra <br />maecenas accumsan
+                        lacus vel facilisis.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="discover-content__rectangle__image"
+                    style="background-image: url('./images/discover-content/discover-burger.png')"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="discover-content__area">
+              <div class="discover-content__rectangle">
+                <div class="discover-content__rectangle__container">
+                  <div class="discover-content__rectangle__box">
+                    <div class="discover-content__rectangle__box__top">
+                      <p class="discover-content__rectangle__box__title">DISCOVER</p>
+                      <span class="discover-content__rectangle__box__subtitle">UPCOMING EVENTS</span>
+                      <p class="discover-content__rectangle__box__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisc- <br />ing elit, sed do eiusmod tempor incididunt ut <br />labore et
+                        dolore magna aliqua. Quis ipsum sus- <br />pendisse ultrices gravida. Risus commodo viverra <br />maecenas accumsan
+                        lacus vel facilisis.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="discover-content__rectangle__image"
+                    style="background-image: url('./images/discover-content/discover-burger.png')"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reservation-content">
+        <div class="container--small">
+          <div class="reservation-content__wrapper">
+            <div class="reservation-content__title-section">
+              <p class="reservation-content__title-section__title">RESERVATION</p>
+              <p class="reservation-content__title-section__subtitle">BOOK YOUR TABLE</p>
+            </div>
+            <form class="reservation-content__form" name="reservation-form" action="find" onsubmit="return false" method="post">
+              <input
+                type="text"
+                name="reservation-name"
+                class="reservation-content__form-element reservation-content__form__box"
+                placeholder="NAME"
+              />
+              <input
+                type="text"
+                name="reservation-email"
+                class="reservation-content__form-element reservation-content__form__box"
+                placeholder="EMAIL"
+              />
+              <input
+                type="text"
+                name="reservation-date"
+                class="reservation-content__form-element reservation-content__form__box"
+                placeholder="DATE"
+              />
+              <input
+                type="text"
+                name="reservation-time"
+                class="reservation-content__form-element reservation-content__form__box"
+                placeholder="TİME"
+              />
+              <input
+                type="text"
+                name="reservation-people"
+                class="reservation-content__form-element reservation-content__form__box"
+                placeholder="PEOPLE"
+              />
+              <input
+                type="submit"
+                onclick="formSubmitClick()"
+                class="reservation-content__form-element reservation-content__form__button"
+                value="FIND A TABLE"
+              />
+            </form>
+          </div>
+        </div>
+        <img
+          class="reservation-content__image-left"
+          src="./images/reservation-content/reservation-content-burger.png"
+          alt="Reservation Content Burger"
+        />
+        <img class="reservation-content__image-middle" src="./images/reservation-content/Bottle.png" alt="Bottle" />
+        <img
+          class="reservation-content__image-right"
+          src="./images/reservation-content/reservation-content-burger1.png"
+          alt="Reservation Content Burger1"
+        />
+      </div>
+
+      <div class="footer">
+        <div class="container">
+          <div class="footer__wrapper" style="background-image: url('./images/footer/footer-background-image.png')">
+            <div class="footer__content">
+              <div class="footer__left">
+                <div class="footer__defination">
+                  <img class="footer__defination__logo" src="./images/footer/footer-logo.png" alt="Footer Logo" />
+                  <p class="footer__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br />eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. <br />
+                    Quis ipsum suspendisse ultrices gravida. Risus commodo viver <br />ra maecenas accumsan lacus vel facilisis.
+                  </p>
+                </div>
+              </div>
+              <div class="footer__right">
+                <div class="footer__info-box">
+                  <div class="footer__contact">
+                    <img class="footer__contact__image" src="./images/footer/location.png" alt="Location Icon" />
+                    <span class="footer__contact__text">MAIN ROAD, BUILDİNG NAME, COUNTRY</span>
+                  </div>
+                  <div class="footer__contact">
+                    <img class="footer__contact__image" src="./images/footer/email.png" alt="Email Icon" />
+                    <span class="footer__contact__text">INFO@COMPANYNAME.COM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__company-name-wrapper">
+              <p class="footer__company-name">© Company Name 2020. All rights reserved.</p>
+              <div class="footer__social">
+                <a class="footer__social__item" href="#instagram">
+                  <img class="footer__social__logo" src="./images/footer/instagram.png" alt="Instagram Logo" />
+                </a>
+                <a class="footer__social__item" href="#facebook">
+                  <img class="footer__social__logo" src="./images/footer/facebook.png" alt="Facebook Logo" />
+                </a>
+                <a class="footer__social__item" href="#twitter">
+                  <img class="footer__social__logo" src="./images/footer/twitter.png" alt="Twitter Logo" />
+                </a>
+                <a class="footer__social__item" href="#whatsapp">
+                  <img class="footer__social__logo" src="./images/footer/whatsapp.png" alt="Whatsapp Logo" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

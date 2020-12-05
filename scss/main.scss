@@ -1,0 +1,88 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+main {
+  display: block;
+}
+
+.show-screen {
+  height: 100vh;
+  background-image: url("../images/main-content/main-yellow-background.png");
+}
+
+.page-background {
+  background-color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  
+}
+
+.container--large {
+  width: 100%;
+  padding: 0 15px;
+  
+}
+
+.container--small {
+  width: 100%;
+  padding: 0 15px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  
+  .container {
+    width: 1000px;
+    padding: 0;
+  }
+
+  .container--large {
+    width: 1070px;
+    padding: 0;
+  }
+
+  .container--small {
+    width: 450px;
+    padding: 0;
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1460px) {
+  
+  .container {
+    width: 1330px;
+    padding: 0;
+  }
+
+  .container--large {
+    width: 1400px;
+    padding: 0;
+  }
+
+  .container--small {
+    width: 780px;
+    padding: 0;
+  }
+
+}
